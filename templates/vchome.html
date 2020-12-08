@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %} Virtual Class Home {% endblock %}
+
+{%block vcactive %}active{% endblock %}
+
+{% block content%}
+{% load static %}
+{% static "images" as baseUrl %}
+
+<div>
+<img class="img-fluid" src="{% static 'images\source.unsplash.jpg' %}">
+<p class="carousel-caption myfont">Coming Soon</p>
+</div>
+  {% endblock %}
